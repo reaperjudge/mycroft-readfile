@@ -27,4 +27,4 @@ class Readfile(MycroftSkill):
         pass
 
 def create_skill():
-    return Readfile()
+    return Readfile() 
