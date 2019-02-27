@@ -1,20 +1,10 @@
-# Skill-backtalk
-To backtalk people (to pratice my programming)
+# mycroft-readfile
+To read every line of a file
 
 ## Usage:
-* `good morning`
-* `good afternoon`
-* `good evening`
-* `don't backtalk me`
-* `backtalk`
-* `this is sparta`
+* `read file`
+* `file read`
+* `file`
 
-## Backtalk:
-* `Don't feel like talking`
-* `I'm mad at you`
-* `This has been a horrible day`
-* `Leave me alone`
-* `Go away`
-* `Go f yourself`
-* `Why must you bug me?`
-* `(and other stuff)`
+## Output:
+  reads every line of the programmed file
