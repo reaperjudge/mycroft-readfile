@@ -5,26 +5,26 @@ from mycroft.skills.core import MycroftSkill
 
 __author__ = 'reaperjudge'
 
-# Creating Backtalk extending MycroftSkill
-class Backtalk(MycroftSkill):
+# Creating Readfile extending MycroftSkill
+class Readfile(MycroftSkill):
     def __init__(self):
-        super(Backtalk, self).__init__(name="Backtalk")
+        super(Readfile, self).__init__(name="Readfile")
 
     def initialize(self):
-        # Creating GreetingsIntent requiring Greetings vocab
-        greetings = IntentBuilder("GreetingsIntent"). \
-            require("greetings").build()
+        # Creating activationIntent requiring activation vocab
+        activation = IntentBuilder("activationIntent"). \
+            require("").build()
         # Associating a callback with the Intent
-        self.register_intent(greetings,
-                             self.handle_greetings)
-        
-    def handle_greetings(self, message):
-        # Sending a command to mycroft, speak Greetings Dialog
+        self.register_intent(activation,
+                             self.handle_activation)
+
+    def handle_activation(self, message):
+        # Sending a command to mycroft, speak activation Dialog
         self.speak_dialog("respond")
 
-        
+
     def stop(self):
         pass
 
 def create_skill():
-    return Backtalk()
+    return Readfile()
