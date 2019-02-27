@@ -13,7 +13,7 @@ class Readfile(MycroftSkill):
     def initialize(self):
         # Creating activationIntent requiring activation vocab
         activation = IntentBuilder("activationIntent"). \
-            require("").build()
+            require("activation.voc").build()
         # Associating a callback with the Intent
         self.register_intent(activation,
                              self.handle_activation)
